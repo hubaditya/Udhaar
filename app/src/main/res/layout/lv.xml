@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@color/White">
+
+
+    <TextView
+        android:id="@+id/initials"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:text="A"
+        android:textSize="20sp"
+        android:textColor="@color/White"
+        android:background="@drawable/circle"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/friend_online_imageview"
+        android:layout_toRightOf="@+id/initials"
+        android:paddingTop="20dp"
+        android:text="Namew"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toLeftOf="@id/friend_online_imageview"
+        android:layout_toRightOf="@+id/initials"
+        android:paddingBottom="20dp"
+        android:text="balance"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/friend_online_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:src="@mipmap/ic_keyboard_arrow_right_grey600_24dp" />
+
+</RelativeLayout>

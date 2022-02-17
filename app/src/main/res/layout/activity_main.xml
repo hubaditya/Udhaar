@@ -1,0 +1,176 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg"
+        android:layout_marginTop="48dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grad"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <pl.pawelkleczkowski.customgauge.CustomGauge
+                        android:id="@+id/myProgress1"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        gauge:endValue="100"
+                        gauge:pointEndColor="@color/White"
+                        gauge:pointStartColor="@color/White"
+                        gauge:startAngel="135"
+                        gauge:startValue="0"
+                        gauge:strokeCap="ROUND"
+                        gauge:strokeColor="#80000000"
+                        gauge:strokeWidth="6dp"
+                        gauge:sweepAngel="270" />
+
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/myProgress1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="18dp"
+                        android:text="256"
+                        android:textColor="@color/White"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:text="Debit"
+                        android:textColor="@color/White"
+                        android:textSize="20dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <pl.pawelkleczkowski.customgauge.CustomGauge
+                        android:id="@+id/myProgress2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="10dp"
+                        gauge:endValue="100"
+                        gauge:pointEndColor="@color/White"
+                        gauge:pointStartColor="@color/White"
+                        gauge:startAngel="135"
+                        gauge:startValue="0"
+                        gauge:strokeCap="ROUND"
+                        gauge:strokeColor="#80000000"
+                        gauge:strokeWidth="6dp"
+                        gauge:sweepAngel="270" />
+
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/myProgress2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="18dp"
+                        android:text="256"
+                        android:textColor="@color/White"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="50dp"
+                        android:text="Credit"
+                        android:textColor="@color/White"
+                        android:textSize="20dp" />
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.example.infinia.udhaar.CustomScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.baoyz.swipemenulistview.SwipeMenuListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawSelectorOnTop="false"
+
+                    />
+            </LinearLayout>
+        </com.example.infinia.udhaar.CustomScrollView>
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fabbutton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="fabClicked"
+        android:src="@mipmap/ic_add_white_24dp"
+        fab:fab_colorNormal="@color/primary"
+        fab:fab_colorPressed="@color/secondary" />
+</FrameLayout>

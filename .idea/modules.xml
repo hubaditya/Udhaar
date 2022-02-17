@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Udhaar.iml" filepath="$PROJECT_DIR$/Udhaar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customGauge/customGauge.iml" filepath="$PROJECT_DIR$/customGauge/customGauge.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customGaugeExample/customGaugeExample.iml" filepath="$PROJECT_DIR$/customGaugeExample/customGaugeExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipeMenuListView/swipeMenuListView.iml" filepath="$PROJECT_DIR$/swipeMenuListView/swipeMenuListView.iml" />
+    </modules>
+  </component>
+</project>
+

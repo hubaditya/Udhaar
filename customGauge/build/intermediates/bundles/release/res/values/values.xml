@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomGauge"><attr format="integer" name="pointSize"/><attr format="color" name="pointStartColor"/><attr format="color" name="pointEndColor"/><attr format="color" name="strokeColor"/><attr format="dimension" name="strokeWidth"/><attr format="string" name="strokeCap"/><attr format="integer" name="startAngel"/><attr format="integer" name="sweepAngel"/><attr format="integer" name="startValue"/><attr format="integer" name="endValue"/></declare-styleable>
+</resources>
